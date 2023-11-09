@@ -1,0 +1,18 @@
+﻿@model List<Kitap>
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-lg-3 mb-2">
+            <div class="card" style="width: 18rem;">
+                <img src="@item.ResimYolu" class="card-img-top" alt="@item.Ad">
+                <div class="card-body">
+                    <h5 class="card-title">@item.Ad</h5>
+                    <p class="card-text">@item.Yazar</p>
+                    <p class="card-text">@item.BasimTarihi</p>
+                    <a href="#" class="btn btn-primary">@item.Fiyat</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>
